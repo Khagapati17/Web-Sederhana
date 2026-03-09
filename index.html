@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="id" data-bs-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website Khagapati</title>
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+    <style>
+        html { scroll-behavior: smooth; }
+        body { font-family: 'Poppins', sans-serif; transition: background-color 0.3s ease, color 0.3s ease; }
+        .card { transition: transform 0.3s ease, box-shadow 0.3s ease; }
+        .card:hover { transform: translateY(-10px); box-shadow: 0 15px 30px rgba(0,0,0,0.2) !important; }
+        .btn-info { transition: transform 0.2s ease; }
+        .btn-info:hover { transform: scale(1.05); }
+    </style>
+</head>
+<body class="bg-body">
+
+    <nav class="navbar navbar-expand-lg bg-body-tertiary shadow-sm fixed-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold text-info fs-3" href="#">Khagapati.</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto fw-semibold fs-5 align-items-center">
+                    <li class="nav-item"><a class="nav-link text-info" href="#">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#portfolio">Portfolio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                    <li class="nav-item ms-lg-3 mt-3 mt-lg-0">
+                        <button id="saklarLampu" class="btn btn-dark fw-bold rounded-pill px-3">🌙 Gelap</button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container mt-5 pt-5">
+        <div class="row align-items-center mt-5">
+            <div class="col-md-6">
+                <h1 class="fw-bold display-4 text-body-emphasis">HALO DUNIA</h1>
+                <h2 class="fw-semibold text-body-emphasis">im, Khagapati</h2>
+                <p class="fs-5 mt-3 text-body-secondary">ini adalah website pertama yang saya upload dari windows</p>
+                <a href="#about" class="btn btn-info text-white rounded-3 fs-5 px-4 py-2 mt-3 fw-bold">JelaJahi</a>
+            </div>
+            <div class="col-md-6 text-center mt-4 mt-md-0">
+                <img src="Subuh.jpg" alt="Foto Subuh" width="365" class="img-fluid rounded-4 shadow">
+            </div>
+        </div>
+    </div>
+
+    <div id="about" class="container mt-5 pt-5 pb-5">
+        <div class="row justify-content-center text-center mt-5">
+            <div class="col-md-8">
+                <h2 class="fw-bold mb-4 text-info">Tentang Saya</h2>
+                <p class="fs-4 text-body-secondary lh-base">
+                    Saya adalah seorang mahasiswa semester 6, yang saat ini sedang bekerja sebagai teknisi gedung di sebuah perusahaan yang ada di Jakarta. Saya membuat website ini untuk belajar menjadi seorang IT yang siap nantinya untuk melakukan perubahan pekerjaan setelah saya lulus S1.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div id="portfolio" class="container mt-5 pt-5 pb-5">
+        <h2 class="fw-bold text-center mb-5 text-info">Portfolio Proyek</h2>
+        <div class="row g-4">
+            <div class="col-md-4">
+                <div class="card h-100 shadow-sm border-0 rounded-4 bg-body-tertiary">
+                    <img src="https://picsum.photos/400/300?random=1" class="card-img-top rounded-top-4" alt="Proyek 1">
+                    <div class="card-body mt-2">
+                        <h5 class="card-title fw-bold text-body-emphasis">Instalasi Kelistrikan</h5>
+                        <p class="card-text text-body-secondary">Dokumentasi pekerjaan pemeliharaan infrastruktur dan panel kelistrikan gedung.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card h-100 shadow-sm border-0 rounded-4 bg-body-tertiary">
+                    <img src="https://picsum.photos/400/300?random=2" class="card-img-top rounded-top-4" alt="Proyek 2">
+                    <div class="card-body mt-2">
+                        <h5 class="card-title fw-bold text-body-emphasis">Desain UI/UX Website</h5>
+                        <p class="card-text text-body-secondary">Eksplorasi tata letak visual dan rancangan prototype interaktif di Figma.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card h-100 shadow-sm border-0 rounded-4 bg-body-tertiary">
+                    <img src="https://picsum.photos/400/300?random=3" class="card-img-top rounded-top-4" alt="Proyek 3">
+                    <div class="card-body mt-2">
+                        <h5 class="card-title fw-bold text-body-emphasis">Tugas Sistem Informasi</h5>
+                        <p class="card-text text-body-secondary">Pengembangan logika pemrograman web dan perancangan basis data server.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="contact" class="container mt-5 pt-5 pb-5">
+        <div class="row justify-content-center mt-5">
+            <div class="col-md-6 bg-body-tertiary p-5 rounded-4 shadow-sm border border-secondary-subtle">
+                <h2 class="fw-bold text-center mb-4 text-info">Hubungi Saya</h2>
+                <form>
+                    <div class="mb-3">
+                        <label class="form-label fw-semibold text-body-emphasis">Nama Lengkap</label>
+                        <input type="text" class="form-control" placeholder="Masukkan nama Anda">
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label fw-semibold text-body-emphasis">Email</label>
+                        <input type="email" class="form-control" placeholder="nama@email.com">
+                    </div>
+                    <div class="mb-4">
+                        <label class="form-label fw-semibold text-body-emphasis">Pesan</label>
+                        <textarea class="form-control" rows="4" placeholder="Tulis pesan Anda di sini..."></textarea>
+                    </div>
+                    <button type="button" class="btn btn-info text-white fw-bold w-100 rounded-3 py-2 fs-5">Kirim Pesan</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <footer class="bg-dark text-white text-center py-4 mt-5">
+        <div class="container">
+            <p class="mb-0 fs-5">© 2026 Khagapati. All Rights Reserved.</p>
+            <p class="text-secondary mt-1">Teknisi Gedung | Mahasiswa Sistem Informasi</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        // Mencari tombol saklar dan elemen utama HTML
+        const saklar = document.getElementById('saklarLampu');
+        const htmlUtama = document.documentElement;
+
+        // Memberikan perintah jika saklar diklik
+        saklar.addEventListener('click', () => {
+            // Cek apakah sekarang sedang mode terang?
+            if (htmlUtama.getAttribute('data-bs-theme') === 'light') {
+                // Ubah ke gelap
+                htmlUtama.setAttribute('data-bs-theme', 'dark');
+                saklar.innerHTML = '☀️ Terang';
+                saklar.classList.replace('btn-dark', 'btn-light');
+            } else {
+                // Ubah kembali ke terang
+                htmlUtama.setAttribute('data-bs-theme', 'light');
+                saklar.innerHTML = '🌙 Gelap';
+                saklar.classList.replace('btn-light', 'btn-dark');
+            }
+        });
+    </script>
+</body>
+</html>
